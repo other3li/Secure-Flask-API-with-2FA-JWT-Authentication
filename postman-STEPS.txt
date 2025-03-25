@@ -1,0 +1,45 @@
+Step 1:  
+POST http://127.0.0.1:5000/auth/register
+Body (JSON):
+{
+  "username": "testuser",
+  "password": "securepassword"
+}
+
+Step 2:  
+GET http://127.0.0.1:5000/auth/generate_qr/testuser
+
+Step 3:  
+POST http://127.0.0.1:5000/auth/login
+Body (JSON):
+{
+  "username": "testuser",
+  "password": "securepassword"
+}
+
+Step 4:  
+POST http://127.0.0.1:5000/auth/login
+Body (JSON):
+{
+  "username": "testuser",
+  "password": "securepassword",
+  "code": "123456"
+}
+
+Step 5:  
+POST http://127.0.0.1:5000/api/products
+Headers:
+Authorization: Bearer <your_token_here>
+Body (JSON):
+{
+  "name": "Laptop",
+  "description": "Gaming Laptop",
+  "price": 1500.00,
+  "quantity": 10
+}
+
+Step 6:  
+GET http://127.0.0.1:5000/api/products
+Headers:
+Authorization: Bearer <your_token_here>
+
