@@ -6,7 +6,7 @@ This project is a **Flask-based REST API** that implements secure authentication
 ---
 
 ## 👨‍💻 Developed by
-This project was created by **[Ali Mohamed Abdelmonem Ekab 😎😎😎]**.
+This project was created by **[Ali Mohamed Abdelmonem Oqab 😎😎😎]**.
 
 ---
 
